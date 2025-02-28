@@ -27,5 +27,7 @@ public class Main {
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
+        saldoActual  = Cuenta1.getSaldo();
+        System.out.println("Tu saldo actual es:" + saldoActual);
     }
 }
