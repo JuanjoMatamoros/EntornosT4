@@ -9,10 +9,14 @@ public class Main {
     public static void operativa_cuenta(Float cantidad) {
         Cuenta Cuenta1;
         double saldoActual;
+        double interes;
 
         Cuenta1 = new Cuenta("Rafael Nadal Parera","1000-2365-85-1230456789",2500,0);
         
         System.out.println("El saldo actual es:"+ Cuenta1.estado() );
+        
+        interes = Cuenta1.getTipoInteres();
+        System.out.println("tu interes es:" + interes);
 
         try {
             Cuenta1.retirar(2300);
